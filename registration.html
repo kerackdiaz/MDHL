@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/mdhl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <title>Welcome - Mighty Ducks Hockey League</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="h-logo">
+      <a href="./Index.html"><img src="./assets/img/Logo-Mighty-ducks-01.png" alt="Logo MDHL"></a>
+      </div>
+      <div class="h-nav">
+        <a href="./Index.html"><h1>Mighty Ducks Hockey League</h1></a>
+      <nav>
+        <a href="./Index.html">Home</a>
+        <a href="./about.html">About MDHL</a>
+        <a href="./rules.html"> Rules</a>
+        <a href="./game_info.html">Game Info</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      </div>
+      <div class="h-social">
+        <a href="#"><svg class="face"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--> <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="m-banner">
+        <h2>Registration Form</h2>
+      </div>
+        <div class="m-content m-form">
+          <div class="form-body">
+            <form action="show_data.html" method="get">
+              <fieldset class="form-p">
+                <input class="col-50" type="text" id="first_name" name="first_name" placeholder="Player’s First Name" required>
+                <input class="col-50" type="text" id="Last_name" name="Last_name" placeholder="Last Names" required>
+                <input class="col-100" type="text" id="Address" name="Address" placeholder="Street Address" required>
+                <input class="col-50" type="text" id="City" name="City" placeholder="City" required>
+                <input class="col-50"type="text" id="Zip_code" name="Zip_code" placeholder="Zip Code">
+                <div class="col-50">
+                <label for="Brith_date">Brith Date:</label>
+                <input type="date" id="Brith_date" name="Brith_date" placeholder="Brith Date" required>
+              </div>
+                <fieldset class="form-s">
+                    <legend>Gender:</legend>
+                    <input class="col-50" type="radio" id="Male" name="Gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input class="col-50" type="radio" id="Female" name="Gender" value="Female">
+                    <label for="Female">Female</label>
+                </fieldset>
+
+                  <fieldset class="form-s col-100">
+                    <legend>Grade:</legend>
+                    <input type="radio" id="Pre_School" name="grade" value="Pre School">
+                    <label for="Pre_School">Pre School</label>
+                    <input type="radio" id="1st" name="grade" value="1st">
+                    <label for="1st">1st</label>
+                    <input type="radio" id="2st" name="grade" value="2st">
+                    <label for="2st">2st</label>
+                    <input type="radio" id="3st" name="grade" value="3st">
+                    <label for="3st">3st</label>
+                    <input type="radio" id="4st" name="grade" value="4st">
+                    <label for="4st">4st</label>
+                    <input type="radio" id="5st" name="grade" value="5st">
+                    <label for="5st">5st</label>
+                  </fieldset>
+                </fieldset>
+                
+                <fieldset class="form-f">
+                  <legend><h2>Which elementary school do you live near</h2> Closest School:</legend>
+                  <input type="radio" id="AJ_Katzenmaier" name="school" value="AJ Katzenmaier">
+                  <label for="AJ_Katzenmaier">AJ Katzenmaier</label>
+                  <input type="radio" id="Marjorie_P_Hart" name="school" value="Marjorie P Hart">
+                  <label for="Marjorie_P_Hart">Marjorie P Hart</label>
+                  <input type="radio" id="Greenbay" name="school" value="Greenbay">
+                  <label for="Greenbay">Greenbay</label>
+                  <input type="radio" id="North" name="school" value="North">
+                  <label for="North">North Elementary</label>
+                  <input type="radio" id="Howard_A_Yeager" name="school" value="Howard A Yeager">
+                  <label for="Howard_A_Yeager">Howard A Yeager</label>
+                  <input type="radio" id="South" name="school" value="South">
+                  <label for="South">South Elementary</label>
+                </fieldset>
+                
+                <fieldset class="form-f col-100">
+                  <legend>What position(s) do you normally play? (check all that apply)</legend>
+                  <label>
+                    <input type="checkbox" name="opcion" value="Forward">
+                    Forward
+                  </label>
+                  <label>
+                  <input type="checkbox" name="opcion" value="Midfield">
+                  Midfield
+                </label>
+                <label>
+                  <input type="checkbox" name="opcion" value="Defense">
+                  Defense
+                </label>
+                <label>
+                  <input type="checkbox" name="opcion" value="Goalkeeper">
+                  Goalkeeper
+                </label>
+                </fieldset>
+                
+                <fieldset class="form-f">
+                  <legend>Uniform Size:</legend>
+                  <input type="radio" id="Youth_Small" name="u_size" value="Youth Small">
+                  <label for="Youth_Small">Youth Small</label>
+                  <input type="radio" id="Youth_Medium" name="u_size" value="Youth Medium">
+                  <label for="Youth_Medium">Youth Medium</label>
+                  <input type="radio" id="Youth_Large" name="u_size" value="Youth Large">
+                  <label for="Youth_Large">Youth Large</label>
+                  <input type="radio" id="Small" name="u_size" value="Small">
+                  <label for="Small">Small</label>
+                  <input type="radio" id="Medium" name="u_size" value="Medium">
+                  <label for="Medium">Medium</label>
+                  <input type="radio" id="Large" name="u_size" value="Large">
+                  <label for="Large">Large</label>
+                  <input type="radio" id="Extra_Large" name="u_size" value="Extra Large">
+                  <label for="Extra_Large">Extra Large</label>
+                </fieldset>
+                <fieldset class="form-f">
+                  <legend>Permission to Play</legend>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and | will abide by all the
+                  rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                  associated with hockey and in consideration for the “League” accepting the registrant for its
+                  hockey programs and activities, | hereby release, discharge, and/or otherwise indemnify MDHL,
+                  their employees and associated personnel and volunteers,including the facilities used for
+                  practices and games, against any claim by or on behalf of the registrant as a result of the
+                  registrant's participation in the programand/orbeing transported to or from MDHL sponsored
+                  activities,which transportation
+                  By entering your name below, | herebyagree andauthorizethe above.In addition, by signing below, lalso
+                  acknowledge that | have read the cancellation policy and agree to its terms.</p>
+                  <label for="signature">Parent/Guardian Signature:</label>
+                  <input type="text" id="signature" name="signature" required>
+                  <label for="Singature_date">Date:</label>
+                  <input type="date" id="Singature_date" name="S_date" required>
+                </fieldset>
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+
+    </main>
+    <footer>
+      <div class="f-logo">
+        <a href="./Index.html"><img src="./assets/img/Logo-Mighty-ducks-01.png" alt="Logo MDHL"></a>
+      </div>
+      <div class="f-tittle">
+        <h1>Mighty Ducks Hockey League</h1>
+        <div class="f-social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="f-nav">
+        <nav>
+          <h2>Links</h2>
+          <a href="./Index.html">Home</a>
+          <a href="./about.html">About MDHL</a>
+          <a href="./rules.html"> Rules</a>
+          <a href="./game_info.html">Game Info</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="f-copy">
+      &copy; 2023 - Mighty Ducks Hockey League
+      </div>
+    </footer>
+  </body>
+</html>

@@ -26,18 +26,19 @@ header{
   border-bottom: solid 10px #5fa199;
 }
 
-
 .h-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 25%;
 }
+
 .h-logo img{
   object-fit: contain;
   filter: drop-shadow(0 0 5px  #990e0e);
   width: 180px;
 }
+
 .h-logo img:hover{
   filter: drop-shadow(0 0 5px  #ffffff);
 }
@@ -58,9 +59,6 @@ header{
   -webkit-text-stroke: 0.2px #990e0e;
 
 }
-.h-nav a {
-  text-decoration: none;
-}
 
 .h-nav nav {
   display: flex;
@@ -69,13 +67,18 @@ header{
   gap: 5%;
 }
 
+.h-nav  a {
+  text-decoration: none;
+}
+
 .h-nav nav a {
   font-size: 23px;
   font-family: 'Bebas Neue', sans-serif;
   color: #990e0e;
   text-decoration: none;
 }
-.h-nav nav a:hover {
+
+.h-nav nav a:hover, .n-form a:hover {
   position: relative;
   transform: scale(1.2);
   color: #fff;
@@ -90,9 +93,9 @@ header{
   transform: scale(1.2);
 }
 
-
 .h-social{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5%;
   width: 25%;
@@ -106,12 +109,30 @@ header{
 }
 
 .h-social svg:hover {
-
   fill:#f8e12e;
 }
 
 .h-social svg.face {
   width: 16px;
+}
+
+.n-form{
+  width: 100%;
+  text-align: center;
+} 
+
+.n-form a {
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.n-form a:hover{
+  color: #f8e12e;
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+  transform: scale(1.2)!important;
 }
 
 /*header style final*/
@@ -222,6 +243,159 @@ ul li{
   margin-top: 3vh;
 }
 
+.game label {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 18px;
+  height: 40px;
+  border: solid 2px;
+  text-align: center;
+  padding: 2px 8px;
+}
+/*maps toggle*/
+.maps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6vh 0;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+iframe{
+  width: 100%;
+}
+
+/*AJ Map*/
+#toggleMapa1 {
+  display: none;
+}
+
+#aj-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa1:checked ~ #aj-frame {
+  display: block;
+}
+
+#toggleMapa1:checked ~ #aj-frame,
+#toggleMapa1:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*Greenbay Map*/
+#toggleMapa2 {
+  display: none;
+}
+
+#green-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa2:checked ~ #green-frame {
+  display: block;
+}
+
+#toggleMapa2:checked ~ #green-frame,
+#toggleMapa2:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*Hat Map*/
+#toggleMapa3 {
+  display: none;
+}
+
+#hat-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa3:checked ~ #hat-frame {
+  display: block;
+  
+}
+
+#toggleMapa3:checked ~ #hat-frame,
+#toggleMapa3:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*howard Map*/
+#toggleMapa4 {
+  display: none;
+}
+
+#howard-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa4:checked ~ #howard-frame {
+  display: block; 
+}
+
+#toggleMapa4:checked ~ #howard-frame,
+#toggleMapa4:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*north Map*/
+#toggleMapa5 {
+  display: none;
+}
+
+#north-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa5:checked ~ #north-frame {
+  display: block;
+}
+
+#toggleMapa5:checked ~ #north-frame,
+#toggleMapa5:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*south Map*/
+#toggleMapa6 {
+  display: none;
+}
+
+#south-frame {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#toggleMapa6:checked ~ #south-frame {
+  display: block;
+  
+}
+
+#toggleMapa6:checked ~ #south-frame,
+#toggleMapa6:checked ~ label {
+  border: none;
+  text-decoration: none;
+}
+
+/*maps*/
 .game {
   width: 100%;
   display: flex;
@@ -316,7 +490,151 @@ font-size: 1.2rem;
   justify-content: space-between;
 }
 
+.m-form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5vh 0;
+}
+.form-body {
+  width: 70%;
+}
 
+form {
+  background: #fff;
+  padding: 8vh 2vw;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.form-p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 2px 3px 10px #00000054;
+}
+.col-50 {
+  width: 46%;
+  margin: 3vh 0;
+}
+.col-100{
+  width: 100%!important;
+  font-size: 16px;
+  border: solid #000;
+  border-width: 0 0 1px 0;
+}
+
+legend {
+  color: black;
+  font-size: 1.17rem;
+  font-weight: bold;
+  text-align: start;
+}
+
+::placeholder{
+  color: #000;
+}
+
+div.col-50 {
+  display: flex;
+  vertical-align: middle;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50px;
+  margin: 10px;
+  border: none;
+}
+
+.form-s {
+  width: 46%;
+  display: flex;
+  align-items: center;
+  border: solid #000;
+  border-width: 0 0 1px 0;
+}
+
+.form-s .col-50 {
+  margin: 10px;
+}
+
+fieldset.form-s {
+  border-width: 0 0 1px 0;
+  padding: 0;
+  height: 60px;
+  border: none;
+  justify-content: center;
+}
+
+form h2, form h3 {
+color: #000;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5px;
+  margin-left: 3vw;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  border: solid #000;
+  border-width: 0 0 1px 0;
+}
+
+fieldset.form-f {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: end;
+  gap: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 2px 3px 10px #00000054;
+  margin-bottom: 40px;
+}
+
+fieldset.form-f.col-100 {
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+fieldset p{
+  padding: 10px;
+}
+
+input#signature {
+  margin-right: 50px;
+  width: 45%;
+}
+
+input[type="submit"] {
+  width: 20%;
+  font-size: 20px;
+  padding: 9px;
+}
 
 /*body style final*/
 
